@@ -1,0 +1,333 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0 1em;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* nav styles start */
+header {
+  background-color: #0A1C41; /* Deep Navy Blue */
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Navigation links */
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+header nav a:hover {
+  color: #FF5722; /* Accent color on hover */
+}
+/* nav styles start */
+
+
+/* Main content layout */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Default for mobile, stacks elements vertically */
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Sidebar and News sections */
+.sidebar-section {
+    width: 100%;
+}
+
+.news-section {
+    width: 100%;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* charts start  */
+.forex-chart-container {
+  width: 100%;
+  max-width: 600px; /* Adjust this value as needed for your design */
+  height: 300px; /* Adjust this value as needed */
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+canvas#forexChart {
+  width: 100% !important;
+  height: auto !important;
+}
+/* charts end  */
+
+/* forms start  */
+.forms-container,
+.forms-view-container {
+  background-color: #f8f8f8af; /* Light gray background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.forms-container h2,
+.forms-view-container h2 {
+  color: #0A1C41; /* Deep Navy Blue */
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form elements */
+.subscription-form,
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.subscription-form label,
+.report-form label {
+  font-weight: 500;
+  color: #333333; /* Dark gray for text */
+}
+
+.subscription-form input[type="email"],
+.report-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.subscription-form input[type="email"]:focus,
+.report-form textarea:focus {
+  outline: none;
+  border-color: #FF5722; /* Accent color on focus */
+}
+
+.report-form textarea {
+  resize: vertical; /* Allows vertical resizing only */
+  min-height: 100px;
+}
+
+/* Buttons */
+.subscription-form button,
+.report-form button {
+  background-color: #0A1C41; /* Deep Navy Blue */
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.subscription-form button:hover,
+.report-form button:hover {
+  background-color: #FF5722; /* Accent color on hover */
+}
+
+/* Submission messages */
+.form-message {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* forms end */
+
+/* News cards start */
+.articles-container {
+  display: grid;
+  gap: 2rem; /* Spacing between cards */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures the image doesn't overflow rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #fff;
+  color: #213547;
+}
+
+.news-card:hover {
+  transform: translateY(-5px); /* Simple hover effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.news-card .news-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures images fill the space without distortion */
+}
+
+.news-card .card-content {
+  padding: 1rem;
+}
+
+.news-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.news-card h3 a {
+  text-decoration: none;
+  color: inherit; /* Inherits color from the card */
+}
+
+.news-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.card-meta {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Category Tag Styling (optional, based on your screenshot) */
+.category-tag {
+  background-color: #FF5722; /* Your accent color */
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.load-more-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+/* News cards end */
+
+/* Adjust for desktop layout */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row; /* Arranges elements horizontally on larger screens */
+        justify-content: space-between;
+    }
+
+    .sidebar-section {
+        width: 30%; /* Gives the sidebar a fixed width */
+        order: 1; /* Puts the sidebar on the left */
+    }
+
+    .news-section {
+        width: 65%; /* Gives the news section a fixed width */
+        order: 2; /* Puts the news section on the right */
+    }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

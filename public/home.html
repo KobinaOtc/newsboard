@@ -1,0 +1,38 @@
+<div class="main-content">
+    <section class="news-section">
+        <h1>Latest Global News</h1>
+        <div class="articles-container">
+            <p>Loading news...</p>
+        </div>
+    </section>
+
+    <aside class="sidebar-section">
+        <section class="forex-chart-container">
+            <h2>Forex Chart</h2>
+            <canvas id="forexChart"></canvas>
+            <p>Loading chart data...</p>
+        </section>
+        
+        <div class="forms-view-container">
+            <section class="newsletter-form-section">
+                <h2>Newsletter Subscription</h2>
+                <form id="newsletter-form" class="subscription-form">
+                    <label for="newsletter-email">Email:</label>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                    <p id="newsletter-message" class="form-message"></p>
+                </form>
+            </section>
+            
+            <section class="report-lead-section">
+                <h2>Report a Lead</h2>
+                <form id="report-lead-form" class="report-form">
+                    <label for="lead-details">Details:</label>
+                    <textarea id="lead-details" name="details" required></textarea>
+                    <button type="submit">Submit Report</button>
+                    <p id="report-message" class="form-message"></p>
+                </form>
+            </section>
+        </div>
+    </aside>
+</div>
