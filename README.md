@@ -1,6 +1,6 @@
-# 📰 Global Market Pulse (News Board)
+# 📰 Global News Pulse (News Board)
 
-Global Market Pulse is a dynamic, single-page application (SPA) designed to combine real-time global news headlines with financial data (Forex charts). Built with a focus on clean, modern design and performant front-end architecture, it provides users with a comprehensive view of global events and their correlation with market movements.
+Global News Pulse is a dynamic, single-page application (SPA) designed to combine real-time global news headlines with financial data (Forex charts). Built with a focus on clean, modern design and performant front-end architecture, it provides users with a comprehensive view of global events and their correlation with market movements.
 
 ---
 
