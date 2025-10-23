@@ -1,36 +1,44 @@
-<div class="main-content">
-    <section class="news-section">
+<div class="main-content flex flex-col md:flex-row md:justify-between md:gap-8 p-4">
+    <section class="news-section w-full md:w-2/3">
         <h1>Latest Global News</h1>
-        <div class="articles-container">
+        <div class="articles-container grid gap-6 grid-cols-1 sm:grid-cols-2">
             <p>Loading news...</p>
         </div>
     </section>
 
-    <aside class="sidebar-section">
-        <section class="forex-chart-container">
+    <aside class="sidebar-section w-full md:w-1/3">
+        <section class="forex-chart-container w-full aspect-video p-4 border border-gray-300 h-100">
             <h2>Forex Chart</h2>
             <canvas id="forexChart"></canvas>
             <p>Loading chart data...</p>
         </section>
         
         <div class="forms-view-container">
-            <section class="newsletter-form-section">
-                <h2>Newsletter Subscription</h2>
-                <form id="newsletter-form" class="subscription-form">
-                    <label for="newsletter-email">Email:</label>
-                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                    <p id="newsletter-message" class="form-message"></p>
+            <section class="newsletter-form-section mb-6">
+                <h2 class="text-xl font-bold text-[#0A1C41] mb-4 text-center">Newsletter Subscription</h2>
+                <form id="newsletter-form" class="subscription-form flex flex-col gap-3">
+                    <label for="newsletter-email" class="font-medium text-gray-700">Email:</label>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required 
+                        class="p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FF5722] focus:border-transparent transition duration-150 text-gray-900"
+                    >
+                    <button class="bg-[#0A1C41] text-black p-2 rounded-md font-semibold text-lg hover:bg-[#FF5722] transition duration-200 mt-2" type="submit">Subscribe</button>
+                    <p id="newsletter-message" class="form-message text-center font-medium mt-1"></p>
                 </form>
             </section>
             
+            <hr class="border-gray-300 my-6">
+
             <section class="report-lead-section">
-                <h2>Report a Lead</h2>
-                <form id="report-lead-form" class="report-form">
-                    <label for="lead-details">Details:</label>
-                    <textarea id="lead-details" name="details" required></textarea>
-                    <button type="submit">Submit Report</button>
-                    <p id="report-message" class="form-message"></p>
+                <h2 class="text-xl font-bold text-[#0A1C41] mb-4 text-center">Report a Lead</h2>
+                <form id="report-lead-form" class="report-form flex flex-col gap-3">
+                    <label class="font-medium text-gray-700" for="lead-details">Details:</label>
+                    <textarea id="lead-details" name="details" required
+                        class="p-2 border border-gray-300 rounded-md min-h-24 focus:ring-2 focus:ring-[#FF5722] focus:border-transparent transition duration-150 text-gray-900"
+                    ></textarea>
+                    <button type="submit"
+                        class="bg-[#0A1C41] text-black p-2 rounded-md font-semibold text-lg hover:bg-[#FF5722] transition duration-200 mt-2">
+                        Submit Report</button>
+                    <p id="report-message" class="form-message text-center font-medium mt-1"></p>
                 </form>
             </section>
         </div>
