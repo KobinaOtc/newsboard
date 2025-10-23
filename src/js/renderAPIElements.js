@@ -38,13 +38,13 @@ let currentPage = 0;
   if (!articlesContainer) return;
 
   const cardsHtml = articles.map(article => `
-        <article class = "news-card">
-          ${article.image ? `<img src ="${article.image}" alt="${article.title}" class="news-image">` : ''}
-          <div class="card-content">
-            <h3><a href="${article.url}" target="_blank"> ${article.title}</a></h3>
-            <p>${article.description || 'No description available.'}</p>
-            <div class="card-meta">
-              <span class="source">${article.source.toUpperCase()}</span>
+        <article class="news-card news-card bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden border border-gray-200">
+          ${article.image ? `<img src ="${article.image}" alt="${article.title}" class="news-image w-full h-48 object-cover">` : ''}
+          <div class="card-content p-4">
+            <h3 class="text-xl font-semibold leading-tight mb-2"><a href="${article.url}" target="_blank"> ${article.title}</a></h3>
+            <p class="text-gray-700 text-sm">${article.description || 'No description available.'}</p>
+            <div class="card-meta flex justify-between items-center text-xs text-gray-500 pt-3 border-t mt-3">
+              <span class="source font-medium">${article.source.toUpperCase()}</span>
               <span class="date">${new Date(article.published_at).toLocaleDateString()}</span>
             </div>
           </div>

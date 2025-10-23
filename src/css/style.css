@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -41,26 +41,31 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
+
+
+
+
+
 
 /* nav styles start */
-header {
-  background-color: #0A1C41; /* Deep Navy Blue */
+/* header {
+  background-color: #0A1C41;
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 100%;
-}
+} */
 
-header nav {
+/* header nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
-}
+} */
 
 /* Navigation links */
-header nav a {
+/* header nav a {
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -69,21 +74,34 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #FF5722; /* Accent color on hover */
-}
+  color: #FF5722;
+} */
 /* nav styles start */
 
 
+
+
+
+
+
+
+
 /* Main content layout */
-.main-content {
+/* .main-content {
     display: flex;
-    flex-direction: column; /* Default for mobile, stacks elements vertically */
+    flex-direction: column;
     gap: 2rem;
     padding: 1rem;
-}
+} */
+
+
+
+
+
+
 
 /* Sidebar and News sections */
-.sidebar-section {
+/* .sidebar-section {
     width: 100%;
 }
 
@@ -130,13 +148,20 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
+
+
+
+
+
+
+
 
 /* charts start  */
-.forex-chart-container {
+/* .forex-chart-container {
   width: 100%;
-  max-width: 600px; /* Adjust this value as needed for your design */
-  height: 300px; /* Adjust this value as needed */
+  max-width: 600px;
+  height: 300px;
   margin: 2rem auto;
   border: 1px solid #ccc;
   padding: 1rem;
@@ -146,13 +171,20 @@ button:focus-visible {
 canvas#forexChart {
   width: 100% !important;
   height: auto !important;
-}
+} */
 /* charts end  */
 
+
+
+
+
+
+
+
 /* forms start  */
-.forms-container,
+/* .forms-container,
 .forms-view-container {
-  background-color: #f8f8f8af; /* Light gray background */
+  background-color: #f8f8f8af;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -161,14 +193,14 @@ canvas#forexChart {
 
 .forms-container h2,
 .forms-view-container h2 {
-  color: #0A1C41; /* Deep Navy Blue */
+  color: #0A1C41;
   margin-top: 0;
   margin-bottom: 1.5rem;
   text-align: center;
-}
+} */
 
 /* Form elements */
-.subscription-form,
+/* .subscription-form,
 .report-form {
   display: flex;
   flex-direction: column;
@@ -178,7 +210,7 @@ canvas#forexChart {
 .subscription-form label,
 .report-form label {
   font-weight: 500;
-  color: #333333; /* Dark gray for text */
+  color: #333333; 
 }
 
 .subscription-form input[type="email"],
@@ -192,19 +224,19 @@ canvas#forexChart {
 .subscription-form input[type="email"]:focus,
 .report-form textarea:focus {
   outline: none;
-  border-color: #FF5722; /* Accent color on focus */
+  border-color: #FF5722;
 }
 
 .report-form textarea {
-  resize: vertical; /* Allows vertical resizing only */
+  resize: vertical;
   min-height: 100px;
-}
+} */
 
 /* Buttons */
-.subscription-form button,
+/* .subscription-form button,
 .report-form button {
-  background-color: #0A1C41; /* Deep Navy Blue */
-  color: white;
+  background-color: #0A1C41; */
+  /* color: white;
   border: none;
   padding: 1rem;
   border-radius: 4px;
@@ -216,29 +248,36 @@ canvas#forexChart {
 
 .subscription-form button:hover,
 .report-form button:hover {
-  background-color: #FF5722; /* Accent color on hover */
-}
+  background-color: #FF5722;
+} */
 
 /* Submission messages */
-.form-message {
+/* .form-message {
   text-align: center;
   font-weight: 500;
   margin-top: 1rem;
-}
+} */
 
 /* forms end */
 
+
+
+
+
+
+
+
 /* News cards start */
-.articles-container {
+/* .articles-container {
   display: grid;
-  gap: 2rem; /* Spacing between cards */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .news-card {
   border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden; /* Ensures the image doesn't overflow rounded corners */
+  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   background-color: #fff;
@@ -246,17 +285,17 @@ canvas#forexChart {
 }
 
 .news-card:hover {
-  transform: translateY(-5px); /* Simple hover effect */
+  transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .news-card .news-image {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Ensures images fill the space without distortion */
-}
+  object-fit: cover;
+} */
 
-.news-card .card-content {
+/* .news-card .card-content {
   padding: 1rem;
 }
 
@@ -268,10 +307,10 @@ canvas#forexChart {
 
 .news-card h3 a {
   text-decoration: none;
-  color: inherit; /* Inherits color from the card */
-}
+  color: inherit; 
+} */
 
-.news-card h3 a:hover {
+/* .news-card h3 a:hover {
   text-decoration: underline;
 }
 
@@ -283,41 +322,36 @@ canvas#forexChart {
   justify-content: space-between;
 }
 
-/* Category Tag Styling (optional, based on your screenshot) */
-.category-tag {
-  background-color: #FF5722; /* Your accent color */
-  color: white;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-
 .load-more-container{
   display: flex;
   justify-content: center;
   margin-top: 2em;
-}
+} */
 /* News cards end */
+
+
+
+
+
+
+
+
 
 /* Adjust for desktop layout */
 @media (min-width: 768px) {
     .main-content {
-        flex-direction: row; /* Arranges elements horizontally on larger screens */
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .sidebar-section {
-        width: 30%; /* Gives the sidebar a fixed width */
-        order: 1; /* Puts the sidebar on the left */
+        width: 30%; 
+        order: 1;
     }
 
     .news-section {
-        width: 65%; /* Gives the news section a fixed width */
-        order: 2; /* Puts the news section on the right */
+        width: 65%; 
+        order: 2;
     }
 }
 
