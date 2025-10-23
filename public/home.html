@@ -1,10 +1,12 @@
 <div class="main-content flex flex-col md:flex-row md:justify-between md:gap-8 p-4">
     <section class="news-section w-full md:w-2/3">
-        <div>
-            <h1>The Global News Hub</h1>
-            <p>Get all you need in one place, all you need to know is the url right above.</p>
+        <div class="mt-10 mb-8">
+            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 leading-none tracking-tight">
+                The Global News <span class="text-[#646cff] dark:text-[#a78bfa]">Pulse</span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-600 sm:text-xl max-w-2xl mx-auto">Get all you need in one place, all you need to know is the url right above.</p>
         </div>
-        <h2>Latest Global News</h2>
+        <h2 class="text-3xl font-bold text-gray-800 border-b pb-2 mb-6 mt-6">Latest Global News</h2>
         <div class="articles-container grid gap-6 grid-cols-1 sm:grid-cols-2">
             <p>Loading news...</p>
         </div>
@@ -25,7 +27,7 @@
                     <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required 
                         class="p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FF5722] focus:border-transparent transition duration-150 text-gray-900"
                     >
-                    <button class="bg-[#0A1C41] text-black p-2 rounded-md font-semibold text-lg hover:bg-[#FF5722] transition duration-200 mt-2" type="submit">Subscribe</button>
+                    <button class="bg-[#0A1C41] text-white p-2 rounded-md font-semibold text-lg hover:bg-[#FF5722] transition duration-200 mt-2" type="submit">Subscribe</button>
                     <p id="newsletter-message" class="form-message text-center font-medium mt-1"></p>
                 </form>
             </section>
@@ -40,7 +42,7 @@
                         class="p-2 border border-gray-300 rounded-md min-h-24 focus:ring-2 focus:ring-[#FF5722] focus:border-transparent transition duration-150 text-gray-900"
                     ></textarea>
                     <button type="submit"
-                        class="bg-[#0A1C41] text-black p-2 rounded-md font-semibold text-lg hover:bg-[#FF5722] transition duration-200 mt-2">
+                        class="bg-[#0A1C41] text-white p-2 rounded-md font-semibold text-lg hover:bg-[#FF5722] transition duration-200 mt-2">
                         Submit Report</button>
                     <p id="report-message" class="form-message text-center font-medium mt-1"></p>
                 </form>
