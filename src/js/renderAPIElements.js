@@ -2,7 +2,7 @@ import { fetchNews } from "./newsAPI";
 import { fetchTimeSeries } from "./forexAPI";
 import { 
     Chart, 
-    LineController, // <-- Added this
+    LineController,
     CategoryScale, 
     LinearScale, 
     PointElement, 
@@ -14,7 +14,7 @@ import {
 
 // Register all the necessary components for a line chart
 Chart.register(
-    LineController, // <-- Added this
+    LineController,
     CategoryScale,
     LinearScale,
     PointElement,
@@ -56,24 +56,6 @@ let currentPage = 0;
   } else {
     articlesContainer.innerHTML = cardsHtml;
   }
-  // if (newsArticles.length > 0) {
-  //   articlesContainer.innerHTML = newsArticles.map(article => `
-  //       <article class = "news-card">
-  //         ${article.urlToImage ? `<img src ="${article.urlToImage}" alt="${article.title}" class="news-image">` : ''}
-  //         <div class="card-content">
-  //           <h3><a href="${article.url}" target="_blank"> ${article.title}</a></h3>
-  //           <p>${article.description || 'No description available.'}</p>
-  //           <div class="card-meta">
-  //             <span class="source">${article.source.name.toUpperCase()}</span>
-  //             <span class="date">${new Date(article.publishedAt).toLocaleDateString()}</span>
-  //           </div>
-  //         </div>
-  //       </article>
-  //       `
-  //   ).join('');
-  // } else {
-  //   articlesContainer.innerHTML = '<p>No news articles found or an error occurred.</p>'
-  // }
 }
 
 /**
